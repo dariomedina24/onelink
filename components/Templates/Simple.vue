@@ -33,11 +33,6 @@
           <icon name="ph:instagram-logo-duotone" class="h-6 w-6" />
         </a>
       </span>
-      <span v-if="acc.m" class="p-1">
-        <a :href="acc.m" target="_blank" rel="noopener | noreferrer">
-          <icon name="ph:envelope-duotone" class="h-6 w-6" />
-        </a>
-      </span>
       <span v-if="acc.tg" class="p-1">
         <a :href="acc.tg" target="_blank" rel="noopener | noreferrer">
           <icon name="ph:telegram-logo-duotone" class="h-6 w-6" />

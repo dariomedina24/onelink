@@ -9,15 +9,16 @@
         />
         <app-form-hr />
         <app-form-social-links
-          v-model:facebook="data.f"
-          v-model:twitter="data.t"
-          v-model:instagram="data.ig"
-          v-model:github="data.gh"
-          v-model:telegram="data.tg"
-          v-model:linkedin="data.l"
-          v-model:email="data.e"
-          v-model:whatsapp="data.w"
-          v-model:youtube="data.y"
+          :modelValue="data"
+          @update:f="(val) => data.f = val"
+          @update:t="(val) => data.t = val"
+          @update:ig="(val) => data.ig = val"
+          @update:gh="(val) => data.gh = val"
+          @update:tg="(val) => data.tg = val"
+          @update:l="(val) => data.l = val"
+          @update:e="(val) => data.e = val"
+          @update:w="(val) => data.w = val"
+          @update:y="(val) => data.y = val"
         />
         <app-form-hr />
         <app-form-links v-model="data.ls" />
