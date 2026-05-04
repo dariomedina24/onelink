@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen grid grid-cols-3 divide-x">
-    <div class="col-span-2 h-screen flex flex-col bg-slate-100">
+  <div class="h-screen grid grid-cols-3 divide-x divide-gray-700">
+    <div class="col-span-2 h-screen flex flex-col bg-gray-950">
       <div class="flex-1 overflow-y-auto p-8">
         <app-form-profile
           v-model:name="data.n"
@@ -23,17 +23,17 @@
         <app-form-hr />
         <app-form-links v-model="data.ls" />
       </div>
-      <div class="border-t bg-white flex items-center">
+      <div class="border-t border-gray-700 bg-gray-900 flex items-center">
         <button
           @click="prefillDemoData"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="h-12 flex items-center space-x-2 px-4 border-r border-gray-700 text-xs font-medium bg-gray-900 text-gray-300 hover:bg-gray-800 transition-colors"
         >
           <span> Add demo data </span>
           <icon name="mdi:code-json" class="h-4 w-4" />
         </button>
         <button
           @click="publish"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="h-12 flex items-center space-x-2 px-4 border-r border-gray-700 text-xs font-medium bg-gray-900 text-gray-300 hover:bg-gray-800 transition-colors"
         >
           <span> Publish </span>
           <icon name="ph:paper-plane-tilt-bold" class="h-4 w-4" />
@@ -41,7 +41,7 @@
         <a
           href="https://github.com/fayazara/onelink"
           target="_blank"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="h-12 flex items-center space-x-2 px-4 border-r border-gray-700 text-xs font-medium bg-gray-900 text-gray-300 hover:bg-gray-800 transition-colors"
         >
           <span> Github </span>
           <icon name="mdi:github" class="h-4 w-4" />
@@ -52,7 +52,7 @@
     <a
       href="https://twitter.com/fayazara"
       target="_blank"
-      class="absolute bottom-0 right-0 bg-white rounded-tl-lg shadow px-4 py-1 font-medium text-sm text-gray-500"
+      class="absolute bottom-0 right-0 bg-gray-900 rounded-tl-lg shadow px-4 py-1 font-medium text-sm text-gray-400 border-l border-t border-gray-700"
     >
       Made by Fayaz
     </a>
